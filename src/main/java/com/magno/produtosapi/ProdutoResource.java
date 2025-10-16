@@ -18,6 +18,7 @@ package com.magno.produtosapi;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.MediaType;
 import java.util.List;
+import jakarta.transaction.Transactional;
 
 @Path("/produtos")
 @Produces(MediaType.APPLICATION_JSON)
@@ -30,12 +31,14 @@ public class ProdutoResource {
     }
 
     @POST
+    @Transactional
     public void criar (Produto produto) {
         produto.persist();
     }
 
     @PUT
     @Path("{id}")
+    @Transactional
     public void atualizar(@PathParam("id") Long id, Produto produto) {
         Produto entity = Produto.findById(id);
         if (entity != null) {
@@ -46,6 +49,7 @@ public class ProdutoResource {
 
     @DELETE
     @Path("{id}")
+    @Transactional
     public void deletar(@PathParam("id") Long id) {
         Produto entity = Produto.findById(id);
         if (entity != null) {
