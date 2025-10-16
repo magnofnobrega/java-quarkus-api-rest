@@ -41,6 +41,9 @@ cd java-quarkus-api-rest
 ```bash
 ./mvnw quarkus:dev`  
 ```  
+<img src="/img/rodandoQuarkus.jpg" width="30"> 
+<img src="/img/rodandoQuarkus2.jpg" width="30">  
+
   
 3. Acesse a API no navegador ou no Postman  
 ```bash
@@ -69,7 +72,10 @@ Exemplo de JSON:
     "nome": "Mouse Gamer",
     "preco": 299.00
 }
-```  
+```
+![POST](/img/POST.jpg)  
+
+---  
 
 # Atualizar produto  
 
@@ -81,10 +87,17 @@ Exemplo de JSON:
     "preco": 249.00
 }
 ```  
+![POST](/img/PUT.jpg)  
+
+---  
 
 # Deletar produto  
 
 `DELETE /produtos/{id}`  
+
+![POST](/img/DELETE.jpg)  
+
+---  
 
 # Testes realizados (Postman)  
 
