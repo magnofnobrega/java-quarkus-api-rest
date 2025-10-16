@@ -41,7 +41,7 @@ cd java-quarkus-api-rest
 ```bash
 ./mvnw quarkus:dev`  
 ```  
-<img src="/img/rodandoQuarkus.jpg" width="50%"><img src="/img/rodandoQuarkus2.jpg" width="50%">  
+<img src="/img/rodandoQuarkus.jpg" width="50%"> <img src="/img/rodandoQuarkus2.jpg" width="47%">  
 
   
 3. Acesse a API no navegador ou no Postman  
